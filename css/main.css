@@ -1,12 +1,11 @@
 /***** BASE STYLES *****/
 
 body {
-	font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 color: #2b2b2b;
 }
 
-#about, #work, #contact {
-    height: 600px;
+#portfolio, #about, #contact {
 }
 
 /***** GRID *****/
@@ -16,33 +15,44 @@ color: #2b2b2b;
     margin: 0 auto;
 }
 .half-width {
-	width: 600px;
-	float: left;
+    float: left;
+    width: 600px;
 }
 .third-width {
-	width: 400px;
-	float: left;
+    float: left;
+    width: 400px;
+}
+
+.section-one, .section-two, .section-three {
+    height: 460px;
+    margin: 16px;
+}
+
+.row-one, .row-two, .row-three {
+    float: right;
+    text-align: center;
 }
 
 /****** HEADER *****/
 
 header {
-    height: 800px;
-    background: url('../img/hero.png');
+    height: 700px;
+    background-image: url('../images/hero-image.png');
     background-size: cover;
+    background-position: center;
 }
 
 header h1 { 
-	color: #bbc085; 
+    color:  #003333; 
     font-family: 'Lora', serif;
-	font-size: 30px;
-    padding: 65px 0 65px 25px;
+    font-size: 15px;
+    padding: 35px 0 35px 15px;
 }
 nav {
-    float: right; 
-    padding: 75px 25px;
+    float: right;
+    padding: 0 75px 0 25px;
 }
-nav ul li{
+nav ul li {
     display: inline-block;
 }
 nav ul li a {
@@ -50,112 +60,141 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     color: #828282;
-    padding-left: 80px;
+    padding-left: 40px;
 }
 header h2 {
     width: 1000px;
     clear: both;
     font-family: 'Lora', serif;
-    font-size: 72px;
+    font-size: 62px;
     line-height: 80px;
-    color: #9b9b9b;
-    padding: 20px 0 20px 25px;
+    color: #ffcccc;
+    padding: 120px 35px 0 170px;
 }
 header h2 span {
     color: #2b2b2b;
 }
 
-/***** ABOUT ******/
-
-#about .full-width {
-    padding: 80px 0;
+/***** PORTFOLIO ******/
+#portfolio .full-width {
+    padding: 25px 0;
+    height: 1650px;
+    text-transform: capitalize;
 }
 
-#about h2 {
+/****** portfolio boarder option - #portfolio .portfolio-img { border: 12px solid lightcoral; } *****/
+
+#portfolio h3 {
     font-family: 'Lora', serif;
     font-size: 36px;
-    padding-left: 50px;
-}
- 
-#about p {
-    font-size: 21px;
-    color: #7F7F7F;
-    line-height: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-/***** WORK ******/
-
-#work {
-	background-color: #F9CEB7;
-	text-align: center;
-}
-
-#work. full-width {
-	padding: 115px 0;
-}
-
-#work img {
-    padding-bottom: 30px;
-}
-
-#work h3 {
-    font-size: 24px;
-    line-height: 32px;
-    width: 190px;
+    text-align: center;
     margin: 0 auto;
 }
  
-#work p {
+#portfolio p {
     font-family: 'Lora', serif;
     font-size: 18px;
     line-height: 30px;
     padding: 0 50px;
 }
 
+
+/***** ABOUT ******/
+
+#about .full-width {
+    padding: 10px 10px 10px 10px;
+}
+#about {
+    background-color: #087e8b;
+    color: white;
+    font-weight: bold;
+    height: 500px;
+}
+#about h3 {
+    font-family: 'Lora', serif;
+    color: white;
+    font-size: 36px; 
+    text-align: center;
+}
+#about #contact-img {
+    margin-left: 25px;
+    border: 5px solid white;
+    width: 275px;
+    float: left;
+    display: inline-block;
+}
+#about p {
+    font-size: 24px;
+    color: white;
+    padding: 50px;
+    vertical-align: middle;
+}
+
 /***** CONTACT ******/
 
-#contact {
-	background-color: #EBEBEB;
-}
-
 #contact .full-width {
-	padding: 110px 0;
-}
-#contact img#contact-img {
-    margin-left: 25px;
-    border: 12px solid #ffffff;
-}
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
-    padding-left: 115px;
-}
-#contact #envelope {
-    padding: 0 10px 0 115px;
+    padding: 10px;
 }
 
-#contact h2 {
+#contact {
+    background-color: #095156;
+    height: 400px;
+}
+
+#contact .third-width {
+    width: 33.3333%;
+    margin: 0 auto;
+}
+
+.hire-me div {
+    float: left;
+	padding-left: 25px;
+	width: 33.3333%;
+	box-sizing: border-box;
+}
+
+.follow-me div {
+    float: left;
+	padding-left: 25px;
+	width: 33.3333%;
+	box-sizing: border-box;
+}
+
+.meet-me div {
+    float: left;
+    padding-left: 25px;
+	width: 33.3333%;
+    box-sizing: border-box;
+}
+
+#contact h5 {
     font-family: 'Lora', serif;
-    font-size: 36px;
-    line-height: 44px;
+    color: white;
+    font-size: 36px; 
+    text-align: center;
+    margin: 0 auto;
 }
-#contact #email-header{
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 44px;
-    margin: -30px 0 5px 0;
-}
-#contact #socialmedia-header {
+#contact h6 {
+    color: #ffffff;
+    font-size: 24px;
     font-weight: bold;
-    font-size: 29px;
-    line-height: 44px;
-    margin: 40px 0 0 0;
+    padding-bottom: 0px;
+    text-align: center;
+}
+#contact p {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
 }
 #contact a {
     text-decoration: none;
-    color: #C49075
-    font-weight: bold;
+    color: #c49075;
+    font-style: italic;
     font-size: 28px;
+    text-align: center;
+    padding-left: 80px;
+    padding-bottom: 50px;
 }
 
 #contact ul {
@@ -164,7 +203,22 @@ header h2 span {
 #contact ul li {
      display: inline-block;
 }
-#contact ul img {
-    font-size: 32px;
-    padding-right: 48px;
+
+#footer .full-width {
+    padding: 10px;
 }
+
+#footer {
+    background-color: #095156;
+}
+
+#footer p {
+    color: #c49075;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+
