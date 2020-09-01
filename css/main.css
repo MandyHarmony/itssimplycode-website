@@ -1,57 +1,83 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /***** BASE STYLES *****/
 
 body {
+    margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
-color: #2b2b2b;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+    color: #2b2b2b;
 }
 
-#portfolio, #about, #contact {
+img {
+    max-width: 100%;
 }
 
-/***** GRID *****/
+h1, h2 {
+    font-family: 'Lora', serif;
+}
 
-.full-width {
-    width: 1200px;
+h3 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    text-align: center;
     margin: 0 auto;
 }
-.half-width {
-    float: left;
-    width: 600px;
-}
-.third-width {
-    float: left;
-    width: 400px;
+
+h4 {
+    
 }
 
-.section-one, .section-two, .section-three {
-    height: 460px;
-    margin: 16px;
-}
-
-.row-one, .row-two, .row-three {
-    float: right;
-    text-align: center;
-}
-
-/****** HEADER *****/
-
-header {
-    height: 700px;
-    background-image: url('../images/hero-image.png');
-    background-size: cover;
-    background-position: center;
-}
-
-header h1 { 
-    color:  #003333; 
+h5 {
+    color: #003333; 
     font-family: 'Lora', serif;
-    font-size: 15px;
-    padding: 35px 0 35px 15px;
+    font-size: .75rem;
 }
-nav {
-    float: right;
-    padding: 0 75px 0 25px;
+
+p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 30px;
 }
+
+section {
+    padding: 4em 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1128px;
+}
+
+
+/*------ Base Header - Footer Styles ------------*/
+header nav {
+    width: 60%;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  header nav ul li {
+    font-size: 1.125em;
+    margin-right: 10px;
+    list-style: none;
+  }
+
 nav ul li {
     display: inline-block;
 }
@@ -62,27 +88,94 @@ nav ul li a {
     color: #828282;
     padding-left: 40px;
 }
-header h2 {
-    width: 1000px;
-    clear: both;
-    font-family: 'Lora', serif;
-    font-size: 62px;
-    line-height: 80px;
-    color: #ffcccc;
-    padding: 120px 35px 0 170px;
+
+footer {
+    background-color: #003333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  footer p {
+    margin: 0 auto;
+  }
+  
+  footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+  }
+  
+  footer .contact {
+    margin-bottom: 20px 0;
+  }
+  
+  footer .social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .social-icons i {
+    background-color: #087e8b;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer .social-icons p i {
+    font-size: 1.3125em;
+  }
+
+  .footer-content h4 {
+  }
+  
+  footer .copyright {
+    margin: 20px 0;
+  }
+
+/****** HEADER *****/
+.intro_text {
+    margin: 0 auto;
 }
-header h2 span {
+
+.intro {
+    background-image: url('../images/hero-resp.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.hero_area h1 {
+    font-size: 3.875rem;
+    line-height: 4.5rem;
+    color: #ffcccc;
+    margin-left: 40px;
+    margin-top: 70px;
+}
+
+span {
     color: #2b2b2b;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.25rem;
 }
 
 /***** PORTFOLIO ******/
-#portfolio .full-width {
-    padding: 25px 0;
-    height: 1650px;
-    text-transform: capitalize;
+
+.section-title {
+    font-size: 2.25rem;
+    color: #2b2b2b
 }
 
-/****** portfolio boarder option - #portfolio .portfolio-img { border: 12px solid lightcoral; } *****/
+.section-two {
+    background: #cccccc;
+}
 
 #portfolio h3 {
     font-family: 'Lora', serif;
@@ -95,130 +188,119 @@ header h2 span {
     font-family: 'Lora', serif;
     font-size: 18px;
     line-height: 30px;
-    padding: 0 50px;
+    padding: 0;
+}
+
+.section-three {
+    padding-bottom: 0;
 }
 
 
 /***** ABOUT ******/
 
-#about .full-width {
-    padding: 10px 10px 10px 10px;
+.about-section-one {
+    background: #087e8b;
 }
-#about {
-    background-color: #087e8b;
-    color: white;
-    font-weight: bold;
-    height: 500px;
+
+.section-about-title {
+    font-size: 2.25rem;
+    color: #fff;
 }
+
 #about h3 {
     font-family: 'Lora', serif;
-    color: white;
-    font-size: 36px; 
+    color: #fff;
+    font-size: 2.25rem; 
     text-align: center;
+    margin-bottom: 0 auto;
+    line-height: 1;
 }
-#about #contact-img {
-    margin-left: 25px;
-    border: 5px solid white;
-    width: 275px;
-    float: left;
-    display: inline-block;
+
+#about h4 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #ffcccc
+
 }
+
 #about p {
-    font-size: 24px;
+    font-size: 1rem;
     color: white;
-    padding: 50px;
-    vertical-align: middle;
-}
-
-/***** CONTACT ******/
-
-#contact .full-width {
-    padding: 10px;
-}
-
-#contact {
-    background-color: #095156;
-    height: 400px;
-}
-
-#contact .third-width {
-    width: 33.3333%;
     margin: 0 auto;
+    display: flex;
+    text-align: justify;
+    width: 100%;
 }
 
-.hire-me div {
-    float: left;
-	padding-left: 25px;
-	width: 33.3333%;
-	box-sizing: border-box;
+#about img {
+    border: 5px solid #095156;
+    margin-top: 33%;
 }
 
-.follow-me div {
-    float: left;
-	padding-left: 25px;
-	width: 33.3333%;
-	box-sizing: border-box;
-}
+/* Footer */ 
+footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+  }
+  
+  footer .contact {
+    margin-bottom: 0;
+    max-width: 50%;
+  }
 
-.meet-me div {
-    float: left;
-    padding-left: 25px;
-	width: 33.3333%;
-    box-sizing: border-box;
-}
+  footer .contact p {
+      justify-content: center;
+  }
 
-#contact h5 {
-    font-family: 'Lora', serif;
-    color: white;
-    font-size: 36px; 
-    text-align: center;
-    margin: 0 auto;
-}
-#contact h6 {
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: bold;
-    padding-bottom: 0px;
-    text-align: center;
-}
-#contact p {
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: normal;
-    text-align: center;
-}
-#contact a {
-    text-decoration: none;
-    color: #c49075;
-    font-style: italic;
-    font-size: 28px;
-    text-align: center;
-    padding-left: 80px;
-    padding-bottom: 50px;
-}
+  footer .contact a {
+      text-decoration: none;
+      color: #fff
+  }
+  
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+  
+  footer p {
+    line-height: 1.285;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  footer .social-icons {
+    justify-content: space-between;
+  }
+  
+  footer .copyright {
+    width: 100%;
+  }
 
-#contact ul {
-    list-style: none;
-}
-#contact ul li {
-     display: inline-block;
-}
+  footer .copyright p {
+    justify-content: center;
+  }
 
-#footer .full-width {
-    padding: 10px;
+@media (min-width: 800px) {
+    .row {
+        display: flex;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .col + .col {
+        margin-left: 5em;
+    }
+
+    .intro__title {
+        font-size: 3.75rem;
+    }
 }
-
-#footer {
-    background-color: #095156;
-}
-
-#footer p {
-    color: #c49075;
-    font-family: 'Lora', serif;
-    font-size: 14px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-
 
