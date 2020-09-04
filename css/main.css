@@ -117,6 +117,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
   }
   
   footer .social-icons i {
@@ -127,6 +128,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
   }
   
   footer .social-icons p i {
@@ -137,7 +139,7 @@ footer {
     margin: 20px 0;
   }
 
-  
+
 /****** HEADER *****/
 .intro_text {
     margin: 0 auto;
@@ -175,9 +177,8 @@ span {
 }
 
 .section-one img {
-  margin-top: 33%;
-  
 }
+ 
 
 .section-two {
     background: #cccccc;
@@ -203,14 +204,15 @@ span {
 }
 
 .section-three {
-    padding-bottom: 0;
+  padding-bottom: 3em;
+    
 }
 
 
 /***** ABOUT ******/
 
-.about-section-one {
-    background: #087e8b;
+#about {
+  background: #087e8b;
 }
 
 .section-about-title {
@@ -225,14 +227,14 @@ span {
     text-align: center;
     margin-bottom: 0 auto;
     line-height: 1;
-    padding-top: 20px;
+    margin-top: -60px;
 }
 
 #about h4 {
     font-family: 'Dancing Script', cursive;
     text-align: center;
     color: #ffcccc;
-
+    font-size: 1.75rem;
 }
 
 #about p {
@@ -246,12 +248,12 @@ span {
 
 #about img {
     border: 5px solid #095156;
-    margin-top: 33%;
+    margin-top: 23px;
 }
 
 /* Footer */ 
 footer .content-wrapper {
-    width: 65%;
+    width: 100%;
     margin: 100px 0;
   }
   
@@ -271,6 +273,16 @@ footer .content-wrapper {
   footer .contact {
     margin: 0 auto;
     max-width: 50%;
+  }
+
+  footer .social {
+    margin: 0 auto;
+    max-width: 50%;
+  }
+
+  footer h3 {
+    color: #fff;
+    margin-top: -80px;
   }
 
   footer .contact p {
@@ -304,7 +316,42 @@ footer .content-wrapper {
 
   footer .copyright p {
     justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: .75rem;
   }
+
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* ------- Blog -------- */
+  .intro_blog {
+    background-image: url('../images/second-hero-resp.jpg');
+    opacity: ;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.hero_area_blog h1 {
+  font-size: 3.875rem;
+  line-height: 4.5rem;
+  color: #087e8b;
+  margin-left: 40px;
+  margin: 0 auto;
+}
+
+span {
+  color: #2b2b2b;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.25rem;
+}
+
 
 @media (min-width: 800px) {
     .row {
