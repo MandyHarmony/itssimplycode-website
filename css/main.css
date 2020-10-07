@@ -180,8 +180,8 @@ span {
 }
  
 
-.section-two {
-    background: #cccccc;
+.section-one, .section-three {
+    background:#f2f2f2;
 }
 
 .portfolio-section-title {
